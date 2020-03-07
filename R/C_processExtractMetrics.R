@@ -301,7 +301,7 @@ gediWFMetrics = function(
   inputInList = list(NULL, NULL)
   if (class(input)=="list") {
     files = sapply(input, function(x) {
-      x@h5$close_all()
+      close(x)
       return (x@h5$filename)
     })
     inList = tempfile(fileext=".txt")
@@ -310,7 +310,7 @@ gediWFMetrics = function(
     close(fileHandle)
     inputInList[[2]] = inList
   } else {
-    input@h5$close_all()
+    close(input)
     inputInList[[1]] = input@h5$filename
   }
 
