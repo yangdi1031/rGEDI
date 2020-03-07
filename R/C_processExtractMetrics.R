@@ -135,14 +135,14 @@
 #'                            coords = c(xcenter_Savanna, ycenter_Savanna))
 #'
 #'# Extracting GEDI feull-waveform derived metrics
-#'wf_amazon_metrics<-gediWFMetrics(input=wf_amazon,outRoot=file.path(getwd(), "amazon"))
-#'wf_cerrado_metrics<-gediWFMetrics(input=wf_cerrado,outRoot=file.path(getwd(), "cerrado"))
+#'wf_amazon_metrics<-gediWFMetrics(input=wf_Amazon,outRoot=file.path(getwd(), "amazon"))
+#'wf_savanna_metrics<-gediWFMetrics(input=wf_Savanna,outRoot=file.path(getwd(), "cerrado"))
 #'
-#'close(wf_amazon)
-#'close(wf_cerrado)
+#'close(wf_Amazon)
+#'close(wf_Savanna)
 #'
-#'metrics<-rbind(wf_amazon_metrics,wf_cerrado_metrics)
-#'rownames(metrics)<-c("Amazon","Cerrado")
+#'metrics<-rbind(wf_amazon_metrics,wf_savanna_metrics)
+#'rownames(metrics)<-c("Amazon","Savanna")
 #'head(metrics)
 #'}
 #'

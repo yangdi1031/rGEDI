@@ -134,7 +134,7 @@
 #'grid()
 #' 
 #'close(wf_Amazon)
-#'close(wf_Amazon)
+#'close(wf_Savanna)
 #'}
 #'
 #' @import hdf5r
