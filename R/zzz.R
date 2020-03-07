@@ -6,7 +6,7 @@
   for (o in objNames) {
     try(close(get(o)), silent=T)
   }
-  rm(list=as.vector(objNames))
+  rm(list=as.vector(objNames), envir = .GlobalEnv)
   library.dynam.unload("rGEDI", libpath)
   invisible()
 }
