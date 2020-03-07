@@ -55,7 +55,7 @@ clipLevel2A = function(level2a, xmin, xmax, ymin, ymax, output=""){
                          masks,
                          output)
   output = newFile@h5$filename
-  newFile@h5$close_all()
+  close(newFile)
   result = readLevel2A(output)
 
   return (result)
