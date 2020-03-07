@@ -106,7 +106,7 @@ clipLevel1BGeo = function(level1BGeo,xmin, xmax, ymin, ymax){
 #'
 #'# Reading shapefile as SpatialPolygonsDataFrame object
 #'library(raster)
-#'polygon_spdf<-shapefile(polygons_filepath)
+#'polygon_spdf<-shapefile(polygon_filepath)
 #'
 #'level1bGeo_clip = clipLevel1BGeometry(level1bGeo, polygon_spdf, split_by="id")
 #'
